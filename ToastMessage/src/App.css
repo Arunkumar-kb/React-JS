@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+ justify-content:center;
+ align-items: center;
+ flex-direction: column; 
+}
+.btn-container{
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+}
+button{
+  padding: 5px 10px;
+  background-color: #555;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.toast-container{
+  position: fixed;
+  top:20px;
+  right:20px;
+  max-width: 500px;
+}
+.toast{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #555;
+  color:#fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  animation: sildein 3s forwards;
+  margin-bottom: 10px;
+}
+.toast span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.toast .cls-btn{
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@keyframes sildein {
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  90%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+}
+.success{
+  background-color: green;
+}
+.warning{
+  background-color: orange;
+}
+.info{
+  background-color: rgb(19, 19, 104);
+}
+.danger{
+  background-color: darkred;
+}
