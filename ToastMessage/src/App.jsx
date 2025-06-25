@@ -14,7 +14,7 @@ function App() {
   }
   console.log(timeRef)
   const handleClose = (id) => {
-    clearTimeout(timeRef.current[id]);
+    clearTimeout(timeRef.current[id]);cd 
     delete timeRef.current[id];
     setToast((prevToast) => {
       const filterToast = prevToast.filter((toast) => toast.id !== id);
