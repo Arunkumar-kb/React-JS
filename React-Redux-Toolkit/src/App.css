@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: blue;
+    color:aliceblue;
+}
+.nav-bar h1 {
+    font-size: 24px;
+}
+.nav-bar .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: aliceblue;
+}
+.nav-bar .nav-links li a{
+    color: aliceblue;
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container{
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.container .field{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .field label{
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+}
+.container .field input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+.container .field button{
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+.user-detail{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    gap: 10px;
+    margin: 20px;
+    width: 800px;
+    padding: 10px;
+}
+.user-detail button{
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    background-color: red;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+}

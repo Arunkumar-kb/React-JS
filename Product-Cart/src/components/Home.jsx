@@ -41,7 +41,7 @@ const Home = () => {
                {isLoading ? (<p className='loading'>Loading...</p>):(
             <div className="menu">
                 {data.map((item)=>(
-                  <Product key={item.id} item = {item}/>  
+                  <Product key={item.id} item = {item}/> 
                 ))}
             </div>)}
         </div>
